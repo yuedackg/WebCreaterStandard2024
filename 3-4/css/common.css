@@ -1,0 +1,36 @@
+:root {
+    --screen-size: 800px;
+}
+
+header {
+    width: var( --screen-size);
+    height: 70px;
+    margin: 20px auto 40px auto;
+    position: relative
+        /* 基準となるボックスを表す*/
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    /* 基準となるボックスからずらす */
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+}
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+footer p {
+    background-image: url("../images/bg_footer.png");
+    text-align: center;
+}
