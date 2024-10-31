@@ -1,6 +1,6 @@
-@charset 'utf-8';
+@charset "utf-8";
 
-@import url( "common.css");
+@import url( "./common.css");
 
 #contents,
 #contents * {
@@ -17,12 +17,12 @@
 }
 
 #main {
-    width: calc(var(--screen-size) * 70%);
+    width: calc( var(--screen-size) * 70% );
     float: left;
 }
 
 #sub {
-    width: calc(var(--screen-size) * 30%);
+    width: calc(var(--screen-size) * 70%);
     float: right;
 }
 
