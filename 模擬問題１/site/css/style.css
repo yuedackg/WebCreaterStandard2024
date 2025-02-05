@@ -1,4 +1,7 @@
 ﻿@charset "utf-8";
+:root{
+	--myColor: #ffffff;
+}
 
 /* 基本レイアウト ここから↓ */
 @import url(common.css);
@@ -50,7 +53,7 @@ nav ul li#nav_contact a{
 #main{
 	width: 550px;
 	padding: 20px;
-	background-color: #ffffff;
+	background-color: var( --myColor);
 	float: left;
 }
 #sub{
@@ -74,21 +77,55 @@ footer{
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
+#news ul{
+	list-style: none;
+	padding-left: 0;
 
+}
+#news ul li{
+	padding: 20px 0 20px 160px;
+	border-bottom: 1px dotted #fb484e;
+	text-indent: -160px;
+}
 /* トップページ ここまで↑ */
 
 /* 「動物園について」ページ ここから↓ */
-
+.about_area{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.about_area:last-child{
+	margin-bottom: 0;
+}
 /* 「動物園について」ページ ここまで↑ */
 
 /* 「ガイドのご案内」ページ ここから↓ */
-
+table  thead tr th{
+/* background-color: 	#ffdd63; */
+background-color: rgb( 255, 200, 93);
+}
+table tbody tr:nth-child(even) td{
+	background-color: #eef8fa;
+}
 /* 「ガイドのご案内」ページ ここまで↑ */
 
 /* 「人気の動物たち」ページ ここから↓ */
-
+.animals_area figure{
+	width: 265px;
+	margin: 0 0 15px 20px;
+	float: left;
+	overflow: hidden;
+}
+.animals_area figure:first-child{
+	margin-left: 0;
+}
 /* 「人気の動物たち」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
-
+input[text] {
+	width: 200px;
+}
+input[email] {
+	width: 300px;
+}
 /* 「お問い合わせ」ページ ここまで↑ */
