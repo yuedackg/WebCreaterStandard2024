@@ -1,7 +1,89 @@
 ﻿@charset "utf-8";
 
 /* 基本レイアウト ここから↓ */
+@import url(common.css);
 
+body {
+    line-height: 1.4em;
+    /* 行高 */
+}
+
+header,
+nav,
+#level,
+#contents,
+footer {
+    width: 830px;
+    margin: 0 auto 0 auto;
+    /* margin: 0 auto; */
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: -10px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    /* 表示形式　ブロックレベル*/
+    /* 要素をブロック要素（デザイン要素）として扱う */
+    height: 0;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+nav ul li#nav_policy a {
+    background-image: url(../images/global_nav1.png);
+}
+
+nav ul li#nav_service a {
+    background-image: url(../images/global_nav2.png);
+}
+
+nav ul li#nav_facility a {
+    background-image: url(../images/global_nav3.png);
+}
+
+nav ul li#nav_inquiry a {
+    background-image: url(../images/global_nav4.png);
+
+}
+#main {
+    width: 570px;
+    float: left;
+}
+#sub {
+    width: 200px;
+    float: right;
+}
+footer #pagetop{
+    float: right;
+}
+footer #info_group{
+    clear: both;
+}
+#main h1{
+    margin: 0 0 30px 0;
+    padding: 30px 0 30px 0;
+    background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
+    background-repeat: no-repeat,no-repeat  ;
+    background-position: left bottom, left top;
+    color: #ffffff;
+    font-size: 180%;
+    text-align: center;
+}
+#policy #nav_policy a, #service #nav_service a, #facility #nav_facility a, #inquiry #nav_inquiry a, nav ul li a:hover{
+    background-position: 0 -70px;
+}
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
