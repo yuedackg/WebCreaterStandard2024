@@ -87,21 +87,62 @@ footer #info_group{
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
-
+#topics ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+#topics ul li{
+    margin-top: 20px;
+    padding: 0 10px 20px 160px;
+    border-bottom: 1px dotted #333333;
+    text-indent: -160px;
+}
 /* トップページ ここまで↑ */
 
 /* 「当病院について」ページ ここから↓ */
+.h2_group{
+    margin-top: 20px;
+    overflow: hidden;    
+}
+.h2_group:last-child{
+    margin-bottom: 10px;
+}
 
 /* 「当病院について」ページ ここまで↑ */
 
 /* 「診療科のご案内」ページ ここから↓ */
+:root{  /* 試験でないなら、複雑な色を使いまわすときには、色に名前を付ける */
+    --color-table-midasi: #f3bf31;
+    --color-table-data: #f2f2f2;
+}
+table thead tr{
+    background-color: var( --color-table-midasi) ;
+    color: #333333;
+}
+/*
+ :nth-child()は、同じ名前の特定の要素番号を指定することができる。odd:奇数、even：偶数の指定もできる 
+ */
+table tbody tr:nth-child( even){
+    background-color: var( --color-table-data);
+}
 
 /* 「診療科のご案内」ページ ここまで↑ */
-
 /* 「施設紹介」ページ ここから↓ */
-
+.facility_group figure{
+    width: 178px;
+    margin: 0 18px 25px 0;
+    float: left;
+}
+.facility_group figure:nth-child(3){
+    margin-right: 0;
+}
 /* 「施設紹介」ページ ここまで↑ */
-
 /* 「お問い合わせ」ページ ここから↓ */
+input[text],
+input[tel],
+textarea{
+    border: 1px solid #666666;
+}
 
 /* 「お問い合わせ」ページ ここまで↑ */
